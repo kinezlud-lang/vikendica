@@ -2,7 +2,7 @@
 <html lang="sr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <meta name="theme-color" content="#f7f6f2">
 <meta name="color-scheme" content="light">
 <title>Drina Escape — Premium odmor na obali Drine</title>
@@ -608,17 +608,17 @@
 .drina-discover-caption{display:flex;align-items:center;justify-content:center;gap:clamp(20px,5vw,80px);padding:30px 20px 12px;text-align:center}
 .drina-discover-caption-copy{max-width:560px;min-width:0}
 .drina-discover-eyebrow{display:flex;align-items:center;justify-content:center;gap:10px;margin:0 0 12px;color:#92776b;font-size:12px}
-.drina-discover-eyebrow span:first-child{width:6px;height:6px;border-radius:50%;background:#a94432}
-.drina-discover-eyebrow span:nth-child(2){color:#a94432}
+.drina-discover-eyebrow span:first-child{width:6px;height:6px;border-radius:50%;background:#667a65}
+.drina-discover-eyebrow span:nth-child(2){color:#667a65}
 .drina-discover-caption h2{font-family:Georgia,serif;font-size:clamp(28px,3vw,42px);font-weight:400;letter-spacing:-1.2px;margin:0 0 12px}
 .drina-discover-caption h2 em{font-weight:400}
 .drina-discover-caption-copy>p:last-child{font-size:14px;line-height:1.8;color:#76665b;margin:0 auto;max-width:510px}
-.drina-discover-arrow{flex:0 0 50px;width:50px;height:50px;border:1px solid #e8ded0;border-radius:50%;background:transparent;color:#a13b2d;font-size:32px;line-height:1;cursor:pointer;transition:background .2s,transform .2s}
+.drina-discover-arrow{flex:0 0 50px;width:50px;height:50px;border:1px solid #e8ded0;border-radius:50%;background:transparent;color:#667a65;font-size:32px;line-height:1;cursor:pointer;transition:background .2s,transform .2s}
 .drina-discover-arrow:hover{background:#f0e8dc;transform:scale(1.05)}
 .drina-discover-switcher{display:flex;justify-content:center;gap:clamp(12px,3vw,38px);padding:24px 18px 0}
 .drina-discover-switcher button{border:0;background:transparent;padding:8px 0;color:#a09285;font-size:11px;letter-spacing:1px;cursor:pointer}
 .drina-discover-switcher button span{margin-left:5px}
-.drina-discover-switcher button.active-current{color:#a94432}
+.drina-discover-switcher button.active-current{color:#667a65}
 @media(max-width:700px){
  .drina-discover{padding:44px 0 38px}
  .drina-discover-track{height:clamp(260px,76vw,390px);margin:0 0}
@@ -638,6 +638,30 @@
  .drina-discover-switcher button{flex:0 0 auto;font-size:10px}
 }
 
+
+/* SITE-WIDE LAYOUT LOCK: prevent accidental horizontal drift and image zoom gestures */
+html{width:100%;max-width:100%;overflow-x:clip;overscroll-behavior-x:none;-webkit-text-size-adjust:100%;}
+body{width:100%;max-width:100%;margin:0;overflow-x:clip;overscroll-behavior-x:none;}
+*,*::before,*::after{box-sizing:border-box;}
+img,svg,video,canvas,iframe{max-width:100%;}
+button,a{ -webkit-tap-highlight-color:transparent; }
+button,img{ -webkit-user-drag:none; }
+img{user-select:none;-webkit-user-select:none;}
+/* Do not allow gesture zooming on image cards or the full-screen gallery. */
+.drina-discover-card,.gallery-trigger,.gallery-bg-trigger,.library-stage,.library-image-frame,.library-main-image{touch-action:pan-y pinch-zoom;}
+.library-main-image{max-width:min(100%,calc(100vw - 36px));max-height:calc(100dvh - 190px);object-fit:contain;transform:none!important;}
+.library-image-frame{overflow:hidden;}
+.drina-discover,.guest-reviews,.google-reviews,.restored-section,.feature-image,.intro,.stats,.faq{max-width:100%;overflow-x:clip;}
+.drina-discover-track{width:100%;overflow:clip;}
+.guest-reviews-track{overscroll-behavior-x:contain;}
+@media(max-width:700px){
+ .site-header,.nav{max-width:100vw;}
+ .drina-discover-caption-copy{overflow-wrap:anywhere;}
+ .drina-discover-switcher{max-width:100%;}
+ .library-stage{height:calc(100dvh - 150px);margin-top:18px;}
+ .library-image-frame{width:calc(100% - 82px);}
+ .library-main-image{max-width:100%;max-height:calc(100dvh - 210px);}
+}
 </style>
 </head>
 
@@ -646,7 +670,7 @@
   <a class="brand" href="index.html" aria-label="Vikendica na Drini početna"><span class="brand-mark">D</span><span>DRINA<span class="brand-light"> ESCAPE</span></span></a>
   <button class="menu-toggle" aria-label="Otvori meni" aria-expanded="false"><span></span><span></span></button>
   <nav class="nav">
-    <a class="active" href="index.html">Početna</a><a href="smestaj.html">Smeštaj</a><a href="dozivljaji.html">Doživljaji</a><a href="lokacija.html">Lokacija</a><a class="nav-cta" href="#kontakt">Kontakt za rezervacije <span>↗</span></a>
+    <a class="active" href="#top">Početna</a><a href="#vikendica">Vikendica</a><a href="#dozivite-drinu">Doživite Drinu</a><a href="#utisci-gostiju">Utisci gostiju</a><a class="nav-cta" href="#kontakt">Kontakt za rezervacije <span>↗</span></a>
   </nav>
 </header>
 
@@ -661,17 +685,17 @@
   <div class="hero-shade"></div>
   <button class="gallery-bg-trigger" type="button" aria-label="Otvori galeriju fotografija" onclick="openGallery(1)"></button>
   <div class="hero-content reveal">
-    <p class="eyebrow light"><span></span> VAŠ MIR KRAJ REKE</p>
+    <p class="eyebrow light">VAŠ MIR KRAJ REKE</p>
     <h1>Usporite. Udahnite.<br><em>Osetite Drinu.</em></h1>
     <p class="hero-copy">Vaš kutak za odmor na samoj obali Drine — okružen prirodom, stvoren za zajedničke trenutke.</p>
-    <div class="hero-actions"><a class="btn btn-light" href="#vikendica">Otkrijte vikendicu <span>↗</span></a><button class="btn btn-light gallery-open-button" type="button" onclick="openGallery(1)" aria-label="Otvori galeriju svih fotografija"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg> Pogledajte galeriju</button><a class="text-link light-link" href="#kontakt">Pozovite za rezervaciju <span>→</span></a></div>
+    <div class="hero-actions"><button class="btn btn-light gallery-open-button" type="button" onclick="openGallery(1)" aria-label="Otvori galeriju svih fotografija"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg> Pogledajte galeriju</button><a class="text-link light-link" href="#kontakt">Pozovite za rezervaciju <span>→</span></a></div>
   </div>
   <div class="hero-bottom"><span>BAJINA BAŠTA, SRBIJA</span><span class="scroll-cue">SKROLUJTE DA ISTRAŽITE <b>↓</b></span><span>44°05′ N&nbsp; 19°33′ E</span></div>
 </section>
 
 <section class="intro section" id="vikendica">
   <div class="intro-copy reveal"><p class="eyebrow">MESTO ZA VAŠ ODMOR</p><h2>Priroda na pragu.<br><em>Reka ispred vas.</em></h2></div>
-  <div class="intro-right reveal"><p class="lead">Na samoj obali Drine, ova vikendica pruža savršen spoj privatnosti, prirode i prostora za druženje.</p><p>Uživajte u jutarnjoj kafi na velikoj terasi, danima uz reku i večerima u dvorištu, uz roštilj i društvo najbližih.</p><a class="under-link" href="smestaj.html">Upoznajte smeštaj <span>↗</span></a></div>
+  <div class="intro-right reveal"><p class="lead">Na samoj obali Drine, ova vikendica pruža savršen spoj privatnosti, prirode i prostora za druženje.</p><p>Uživajte u jutarnjoj kafi na velikoj terasi, danima uz reku i večerima u dvorištu, uz roštilj i društvo najbližih.</p></div>
 </section>
 
 <section class="feature-image section-tight">
@@ -1007,9 +1031,7 @@
   };
 
   window.handleGalleryBackdrop = function(event){
-    if(event.target === library){
-      closeGallery();
-    }
+    /* Gallery closes only through its close button or Escape key, never an accidental backdrop tap. */
   };
 
   document.addEventListener('keydown', function(event){
