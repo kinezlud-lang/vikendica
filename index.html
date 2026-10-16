@@ -4,12 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#f7f6f2">
-<title>Vikendica na Drini | Odmor uz reku</title>
-<meta name="description" content="Vikendica na samoj obali Drine, 7 km od Bajine Bašte. Smeštaj za 6–8 osoba, terasa, dvorište, letnjikovac, roštilj i aktivnosti na vodi.">
+<meta name="color-scheme" content="light">
+<title>Drina Escape — Premium odmor na obali Drine</title>
+<meta name="description" content="Otkrijte Drina Escape — vikendicu na samoj obali Drine, 7 km od Bajine Bašte. Uživajte u prirodi, terasi, dvorištu i odmoru za 6–8 osoba.">
+<meta property="og:title" content="Drina Escape — Vaš mir kraj Drine">
+<meta property="og:description" content="Vaš kutak za odmor na samoj obali Drine, okružen prirodom i stvoren za zajedničke trenutke.">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style-premium.css">
 
 <style>
 /* PREMIUM IMAGE LIBRARY */
@@ -507,10 +511,137 @@
   }
 }
 
+
+
+/* GOOGLE REVIEWS — HONEST REVIEW INVITATION */
+.google-reviews{
+  position:relative;
+  overflow:hidden;
+  padding:clamp(76px,8vw,116px) clamp(22px,12.2vw,190px);
+  background:#f7f6f2;
+  color:#252b24;
+}
+.google-reviews::before{
+  content:"“";
+  position:absolute;
+  right:8%;
+  top:-65px;
+  color:rgba(56,79,59,.055);
+  font:400 330px/1 Georgia,serif;
+  pointer-events:none;
+}
+.google-reviews-inner{position:relative;z-index:1;max-width:1080px;margin:0 auto;display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(36px,7vw,100px);align-items:center}
+.google-reviews .eyebrow{margin-bottom:22px}
+.google-reviews h2{font:500 clamp(36px,4.2vw,56px)/1.1 Manrope,sans-serif;letter-spacing:-2.5px;margin:0 0 20px}
+.google-reviews h2 em{font-family:Georgia,serif;font-weight:400;color:#667a65}
+.google-reviews-copy>p:not(.eyebrow){max-width:420px;color:#72796f;font-size:13px;line-height:1.9;margin:0}
+.google-review-card{padding:clamp(26px,4vw,42px);background:#fff;border:1px solid #e6e8e0;box-shadow:0 20px 55px rgba(36,49,35,.055)}
+.google-review-top{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-bottom:24px;border-bottom:1px solid #eceee8}
+.google-wordmark{font:700 23px/1 Manrope,sans-serif;letter-spacing:-1.2px;white-space:nowrap}
+.google-wordmark .g-blue{color:#4285f4}.google-wordmark .g-red{color:#ea4335}.google-wordmark .g-yellow{color:#fbbc05}.google-wordmark .g-green{color:#34a853}
+.google-review-label{display:block;margin-top:7px;color:#7c8379;font-size:9px;letter-spacing:1.5px;text-transform:uppercase}
+.google-stars{display:flex;gap:5px;align-items:center;color:#fbbc04;font-size:25px;letter-spacing:1px;line-height:1}
+.google-review-message{padding:26px 0 24px}
+.google-review-message h3{font:600 18px/1.45 Manrope,sans-serif;margin:0 0 10px;letter-spacing:-.35px}
+.google-review-message p{font-size:12px;line-height:1.9;color:#747b72;margin:0}
+.google-review-actions{display:flex;align-items:center;gap:15px;flex-wrap:wrap}
+.google-review-button{display:inline-flex;align-items:center;justify-content:center;gap:11px;min-height:48px;padding:0 20px;background:#344b3a;color:#fff;text-decoration:none;font:600 10px "DM Sans",sans-serif;letter-spacing:1.1px;text-transform:uppercase;transition:background .2s,transform .2s}
+.google-review-button:hover{background:#26392b;transform:translateY(-2px)}
+.google-review-button svg{width:17px;height:17px;flex:0 0 auto}
+.google-review-note{font-size:10px;line-height:1.7;color:#8a9087;max-width:190px}
+@media(max-width:760px){
+  .google-reviews{padding:72px 7%}
+  .google-reviews-inner{grid-template-columns:1fr;gap:30px}
+  .google-reviews h2{font-size:42px;letter-spacing:-1.8px}
+  .google-review-card{padding:25px 21px}
+  .google-review-top{align-items:flex-start;flex-direction:column;gap:18px}
+  .google-review-actions{align-items:flex-start;flex-direction:column;gap:12px}
+  .google-review-note{max-width:300px}
+}
+
+
+/* GUEST REVIEW CARDS — SAMPLE CONTENT, NOT PUBLISHED TESTIMONIALS */
+.guest-reviews{padding:clamp(72px,8vw,112px) clamp(22px,7vw,110px);background:#eeeee7;color:#252b24;overflow:hidden}
+.guest-reviews-inner{max-width:1240px;margin:0 auto}
+.guest-reviews-heading{display:flex;justify-content:space-between;align-items:end;gap:28px;margin-bottom:34px}
+.guest-reviews-heading .eyebrow{margin:0 0 15px}
+.guest-reviews-heading h2{font:500 clamp(34px,4vw,52px)/1.1 Manrope,sans-serif;letter-spacing:-2px;margin:0}
+.guest-reviews-heading h2 em{font-family:Georgia,serif;font-weight:400;color:#667a65}
+.guest-reviews-intro{max-width:330px;margin:0;color:#747b72;font-size:12px;line-height:1.85}
+.guest-reviews-track{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.guest-review-item{min-width:0;padding:28px 25px 25px;background:#fafaf7;border:1px solid #e1e3da;box-shadow:0 12px 35px rgba(36,49,35,.035);display:flex;flex-direction:column;min-height:255px}
+.guest-review-top{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.guest-review-avatar{width:42px;height:42px;flex:0 0 42px;border-radius:50%;display:grid;place-items:center;background:#dce3d7;color:#405643;font:700 13px Manrope,sans-serif}
+.guest-review-person{min-width:0;flex:1}
+.guest-review-name{font:700 12px Manrope,sans-serif;color:#30372f}
+.guest-review-label{font-size:9px;color:#8a9087;margin-top:4px;letter-spacing:.7px;text-transform:uppercase}
+.guest-review-google{font:700 19px Manrope,sans-serif;letter-spacing:-1px;color:#4285f4;flex:0 0 auto}
+.guest-review-stars{display:flex;gap:3px;color:#e6ad2f;font-size:17px;line-height:1;margin-bottom:15px}
+.guest-review-item blockquote{margin:0 0 20px;color:#62695f;font-size:12px;line-height:1.9;flex:1}
+.guest-review-sample{align-self:flex-start;padding:6px 8px;border:1px solid #e4dfcf;color:#8c7950;font-size:8px;line-height:1.3;letter-spacing:1px;text-transform:uppercase}
+.guest-reviews-disclaimer{margin:17px 0 0;color:#888e84;font-size:10px;line-height:1.7}
+@media(max-width:760px){
+ .guest-reviews{padding:66px 0 62px}
+ .guest-reviews-inner{width:100%}
+ .guest-reviews-heading{display:block;padding:0 22px;margin-bottom:25px}
+ .guest-reviews-heading h2{font-size:38px;letter-spacing:-1.5px}
+ .guest-reviews-intro{margin-top:16px;max-width:420px}
+ .guest-reviews-track{display:flex;gap:13px;overflow-x:auto;overflow-y:hidden;padding:0 22px 14px;scroll-snap-type:x mandatory;scroll-padding-left:22px;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+ .guest-reviews-track::-webkit-scrollbar{height:4px}
+ .guest-reviews-track::-webkit-scrollbar-track{background:#dedfd6;border-radius:10px}
+ .guest-reviews-track::-webkit-scrollbar-thumb{background:#9aa493;border-radius:10px}
+ .guest-review-item{flex:0 0 min(82vw,340px);width:min(82vw,340px);min-height:270px;padding:24px 22px;scroll-snap-align:start}
+ .guest-reviews-disclaimer{padding:0 22px;margin-top:12px}
+}
+
+
+/* DRINA DISCOVERY — layered gallery inspired by the supplied reference */
+.drina-discover{overflow:hidden;background:#fbf8ef;padding:72px 0 58px;color:#34231e}
+.drina-discover-track{height:clamp(290px,42vw,570px);max-width:1500px;margin:0 auto;position:relative}
+.drina-discover-card{position:absolute;top:50%;left:50%;padding:0;border:0;background:#e8e0d3;overflow:hidden;border-radius:7px;cursor:pointer;box-shadow:0 8px 28px rgba(55,39,25,.08);transition:transform .55s cubic-bezier(.2,.7,.2,1),opacity .45s,width .45s,height .45s}
+.drina-discover-card img{width:100%;height:100%;display:block;object-fit:cover}
+.drina-card-center{z-index:5;width:min(34vw,525px);height:100%;transform:translate(-50%,-50%)}
+.drina-card-left{z-index:4;width:min(33vw,500px);height:76%;transform:translate(-85%,-50%)}
+.drina-card-right{z-index:4;width:min(33vw,500px);height:76%;transform:translate(-15%,-50%)}
+.drina-card-far-left{z-index:2;width:min(28vw,420px);height:57%;transform:translate(-135%,-50%);opacity:.92}
+.drina-card-far-right{z-index:2;width:min(28vw,420px);height:57%;transform:translate(35%,-50%);opacity:.92}
+.drina-discover-caption{display:flex;align-items:center;justify-content:center;gap:clamp(20px,5vw,80px);padding:30px 20px 12px;text-align:center}
+.drina-discover-caption-copy{max-width:560px;min-width:0}
+.drina-discover-eyebrow{display:flex;align-items:center;justify-content:center;gap:10px;margin:0 0 12px;color:#92776b;font-size:12px}
+.drina-discover-eyebrow span:first-child{width:6px;height:6px;border-radius:50%;background:#a94432}
+.drina-discover-eyebrow span:nth-child(2){color:#a94432}
+.drina-discover-caption h2{font-family:Georgia,serif;font-size:clamp(28px,3vw,42px);font-weight:400;letter-spacing:-1.2px;margin:0 0 12px}
+.drina-discover-caption h2 em{font-weight:400}
+.drina-discover-caption-copy>p:last-child{font-size:14px;line-height:1.8;color:#76665b;margin:0 auto;max-width:510px}
+.drina-discover-arrow{flex:0 0 50px;width:50px;height:50px;border:1px solid #e8ded0;border-radius:50%;background:transparent;color:#a13b2d;font-size:32px;line-height:1;cursor:pointer;transition:background .2s,transform .2s}
+.drina-discover-arrow:hover{background:#f0e8dc;transform:scale(1.05)}
+.drina-discover-switcher{display:flex;justify-content:center;gap:clamp(12px,3vw,38px);padding:24px 18px 0}
+.drina-discover-switcher button{border:0;background:transparent;padding:8px 0;color:#a09285;font-size:11px;letter-spacing:1px;cursor:pointer}
+.drina-discover-switcher button span{margin-left:5px}
+.drina-discover-switcher button.active-current{color:#a94432}
+@media(max-width:700px){
+ .drina-discover{padding:44px 0 38px}
+ .drina-discover-track{height:clamp(260px,76vw,390px);margin:0 0}
+ .drina-discover-card{border-radius:6px}
+ .drina-card-center{width:72vw;height:100%}
+ .drina-card-left{width:62vw;height:72%;transform:translate(-104%,-50%)}
+ .drina-card-right{width:62vw;height:72%;transform:translate(4%,-50%)}
+ .drina-card-far-left{width:50vw;height:55%;transform:translate(-148%,-50%)}
+ .drina-card-far-right{width:50vw;height:55%;transform:translate(48%,-50%)}
+ .drina-discover-caption{gap:12px;padding:25px 14px 8px}
+ .drina-discover-arrow{flex-basis:38px;width:38px;height:38px;font-size:26px}
+ .drina-discover-caption h2{font-size:29px}
+ .drina-discover-caption-copy>p:last-child{font-size:13px;line-height:1.65}
+ .drina-discover-eyebrow{font-size:10px;gap:6px}
+ .drina-discover-switcher{justify-content:flex-start;overflow-x:auto;white-space:nowrap;padding:18px 20px 0;gap:20px;scrollbar-width:none}
+ .drina-discover-switcher::-webkit-scrollbar{display:none}
+ .drina-discover-switcher button{flex:0 0 auto;font-size:10px}
+}
+
 </style>
 </head>
 
-<body>
+<body id="top">
 <header class="site-header">
   <a class="brand" href="index.html" aria-label="Vikendica na Drini početna"><span class="brand-mark">D</span><span>DRINA<span class="brand-light"> ESCAPE</span></span></a>
   <button class="menu-toggle" aria-label="Otvori meni" aria-expanded="false"><span></span><span></span></button>
@@ -559,17 +690,39 @@
 </section>
 
 
-<section class="restored-section section" id="dozivite-drinu">
-  <div class="restored-section-copy reveal">
-    <p class="eyebrow">TRENUTCI NA VODI</p>
-    <h2>Doživite Drinu<br><em>izbliza.</em></h2>
-    <p class="lead">Za one koji žele da odmor provedu i na vodi, postoji mogućnost iznajmljivanja SUP daske i čamca za spust Drinom, uz dodatnu doplatu.</p>
-  </div>
-  <div class="restored-section-photo reveal">
-    <button class="gallery-trigger" type="button" aria-label="Otvori galeriju fotografija — Doživite Drinu izbliza" onclick="openGallery(3)">
-      <img src="image/3.png" alt="Doživite Drinu izbliza — reka i aktivnosti na vodi" loading="lazy">
+<section class="drina-discover section" id="dozivite-drinu" aria-label="Doživite Drinu i istražite okolinu">
+  <div class="drina-discover-track" id="drinaDiscoverTrack">
+    <button class="drina-discover-card drina-card-far-left" type="button" data-slide="0" onclick="openGallery(26)" aria-label="Otvori fotografiju 26">
+      <img src="image/26.png" alt="Fotografija Drina Escape 26" loading="lazy">
     </button>
-    <div class="photo-label"><span>02 / 04</span><span>DOŽIVITE DRINU</span></div>
+    <button class="drina-discover-card drina-card-left" type="button" data-slide="1" onclick="openGallery(22)" aria-label="Otvori fotografiju 22">
+      <img src="image/22.png" alt="Fotografija Drina Escape 22" loading="lazy">
+    </button>
+    <button class="drina-discover-card drina-card-center" type="button" data-slide="2" onclick="openGallery(16)" aria-label="Otvori fotografiju 16">
+      <img id="drinaDiscoverMainImage" src="image/16.png" alt="Fotografija Drina Escape 16" loading="lazy">
+    </button>
+    <button class="drina-discover-card drina-card-right" type="button" data-slide="3" onclick="openGallery(5)" aria-label="Otvori fotografiju 5">
+      <img src="image/5.png" alt="Fotografija Drina Escape 5" loading="lazy">
+    </button>
+    <button class="drina-discover-card drina-card-far-right" type="button" data-slide="4" onclick="openGallery(28)" aria-label="Otvori fotografiju 28">
+      <img src="image/28.png" alt="Fotografija Drina Escape 28" loading="lazy">
+    </button>
+  </div>
+  <div class="drina-discover-caption">
+    <button class="drina-discover-arrow" type="button" id="drinaDiscoverPrev" aria-label="Prethodna fotografija">‹</button>
+    <div class="drina-discover-caption-copy" aria-live="polite">
+      <p class="drina-discover-eyebrow"><span></span><span id="drinaDiscoverKicker">TRENUTCI NA VODI</span><span id="drinaDiscoverDate">02 / 04</span></p>
+      <h2 id="drinaDiscoverTitle">Doživite Drinu <em>izbliza.</em></h2>
+      <p id="drinaDiscoverText">Za one koji žele da odmor provedu i na vodi, postoji mogućnost iznajmljivanja SUP daske i čamca za spust Drinom, uz dodatnu doplatu.</p>
+    </div>
+    <button class="drina-discover-arrow" type="button" id="drinaDiscoverNext" aria-label="Sledeća fotografija">›</button>
+  </div>
+  <div class="drina-discover-switcher" aria-label="Izaberite temu">
+    <button type="button" data-discover="0">01 <span>DRINA ESCAPE</span></button>
+    <button type="button" data-discover="1">02 <span>DRINA ESCAPE</span></button>
+    <button type="button" class="active-current" data-discover="2">03 <span>DRINA ESCAPE</span></button>
+    <button type="button" data-discover="3">04 <span>DRINA ESCAPE</span></button>
+    <button type="button" data-discover="4">05 <span>DRINA ESCAPE</span></button>
   </div>
 </section>
 
@@ -584,6 +737,70 @@
       <img src="image/4.png" alt="Priroda oko vikendice na Drini, Perućačko jezero i planina Tara" loading="lazy">
     </button>
     <div class="photo-label"><span>03 / 04</span><span>PRIRODA OKO VAS</span></div>
+  </div>
+</section>
+
+
+
+
+
+<section class="guest-reviews" id="utisci-gostiju" aria-labelledby="guest-reviews-title">
+  <div class="guest-reviews-inner">
+    <div class="guest-reviews-heading reveal">
+      <div><p class="eyebrow">UTISCI KOJI OSTAJU</p><h2 id="guest-reviews-title">Reči gostiju.<br><em>Uspomene sa Drine.</em></h2></div>
+      <p class="guest-reviews-intro">Lep boravak često se pamti po malim stvarima — miru uz reku, vremenu sa dragim ljudima i trenucima daleko od svakodnevne gužve.</p>
+    </div>
+    <div class="guest-reviews-track" aria-label="Primeri prikaza recenzija; prevucite levo ili desno na telefonu">
+      <article class="guest-review-item reveal">
+        <div class="guest-review-top"><div class="guest-review-avatar" aria-hidden="true">M</div><div class="guest-review-person"><div class="guest-review-name">Milica P.</div><div class="guest-review-label">Primer prikaza recenzije</div></div><span class="guest-review-google" aria-hidden="true">G</span></div>
+        <div class="guest-review-stars" aria-label="Ilustrativni prikaz pet zvezdica">★★★★★</div>
+        <blockquote>„Prelep ambijent za predah od svakodnevice. Najviše nam je prijalo što smo mogli da usporimo, uživamo u prirodi i provedemo vreme zajedno.”</blockquote>
+        <span class="guest-review-sample">Ilustrativni primer · nije stvarna recenzija</span>
+      </article>
+      <article class="guest-review-item reveal">
+        <div class="guest-review-top"><div class="guest-review-avatar" aria-hidden="true">N</div><div class="guest-review-person"><div class="guest-review-name">Nikola J.</div><div class="guest-review-label">Primer prikaza recenzije</div></div><span class="guest-review-google" aria-hidden="true">G</span></div>
+        <div class="guest-review-stars" aria-label="Ilustrativni prikaz pet zvezdica">★★★★★</div>
+        <blockquote>„Odlično mesto za vikend sa porodicom i prijateljima. Priroda i reka daju poseban osećaj odmora, a dvorište je idealno za opušteno druženje.”</blockquote>
+        <span class="guest-review-sample">Ilustrativni primer · nije stvarna recenzija</span>
+      </article>
+      <article class="guest-review-item reveal">
+        <div class="guest-review-top"><div class="guest-review-avatar" aria-hidden="true">A</div><div class="guest-review-person"><div class="guest-review-name">Ana V.</div><div class="guest-review-label">Primer prikaza recenzije</div></div><span class="guest-review-google" aria-hidden="true">G</span></div>
+        <div class="guest-review-stars" aria-label="Ilustrativni prikaz pet zvezdica">★★★★★</div>
+        <blockquote>„Ako tražite mir, zelenilo i vreme bez žurbe, ovo je baš takav tip odmora. Voleli bismo da ponovo dođemo kada nam zatreba mali beg iz grada.”</blockquote>
+        <span class="guest-review-sample">Ilustrativni primer · nije stvarna recenzija</span>
+      </article>
+    </div>
+    <p class="guest-reviews-disclaimer">Napomena: tekstovi i imena iznad su samo primer izgleda budućih recenzija, nisu stvarna iskustva gostiju. Zamenite ih autentičnim recenzijama pre javnog objavljivanja.</p>
+  </div>
+</section>
+
+<section class="google-reviews" id="google-recenzije" aria-labelledby="google-reviews-title">
+  <div class="google-reviews-inner">
+    <div class="google-reviews-copy reveal">
+      <p class="eyebrow">VAŠ UTISAK NAM ZNAČI</p>
+      <h2 id="google-reviews-title">Lepa iskustva<br><em>vredi podeliti.</em></h2>
+      <p>Drina Escape je mesto za mir, prirodu i vreme provedeno sa dragim ljudima. Ako ste već boravili kod nas, vaše iskreno mišljenje može pomoći budućim gostima da nas upoznaju.</p>
+    </div>
+    <div class="google-review-card reveal">
+      <div class="google-review-top">
+        <div>
+          <div class="google-wordmark" aria-label="Google"><span class="g-blue">G</span><span class="g-red">o</span><span class="g-yellow">o</span><span class="g-blue">g</span><span class="g-green">l</span><span class="g-red">e</span></div>
+          <span class="google-review-label">Utisci gostiju · Drina Escape</span>
+        </div>
+        <div class="google-stars" aria-label="Pet zvezdica za ocenjivanje" title="Ocenite svoje iskustvo"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+      </div>
+      <div class="google-review-message">
+        <h3>Bili ste naši gosti?</h3>
+        <p>Ostavite iskrenu ocenu i podelite svoje iskustvo. Svaka povratna informacija nam pomaže da boravak budućih gostiju učinimo još boljim.</p>
+      </div>
+      <div class="google-review-actions">
+        <a class="google-review-button" href="https://www.google.com/search?q=Drina+Escape+Bajina+Ba%C5%A1ta" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path fill="#4285F4" d="M21.6 12.23c0-.72-.06-1.42-.18-2.1H12v3.97h5.38a4.6 4.6 0 0 1-2 3.02v2.52h3.24c1.9-1.75 2.98-4.33 2.98-7.41Z"/><path fill="#34A853" d="M12 22c2.7 0 4.97-.9 6.62-2.44l-3.24-2.52c-.9.6-2.05.96-3.38.96-2.6 0-4.8-1.75-5.58-4.1H3.07v2.6A10 10 0 0 0 12 22Z"/><path fill="#FBBC05" d="M6.42 13.9a6 6 0 0 1 0-3.8V7.5H3.07a10 10 0 0 0 0 9Z"/><path fill="#EA4335" d="M12 5.98c1.47 0 2.78.5 3.82 1.5l2.87-2.87C16.96 2.98 14.7 2 12 2a10 10 0 0 0-8.93 5.5l3.35 2.6C7.2 7.73 9.4 5.98 12 5.98Z"/></svg>
+          Pronađite nas na Google-u <span>↗</span>
+        </a>
+        <span class="google-review-note">Prikazujemo poziv za ostavljanje utiska, a ne izmišljene recenzije ili nepostojeću Google ocenu.</span>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -648,6 +865,42 @@
     </div>
   </div>
 </div>
+
+<script>
+(function(){
+  const menuButton = document.querySelector('.menu-toggle');
+  const navigation = document.querySelector('.nav');
+  if(menuButton && navigation){
+    function closeMenu(){
+      navigation.classList.remove('open');
+      menuButton.setAttribute('aria-expanded','false');
+      menuButton.setAttribute('aria-label','Otvori meni');
+      document.body.classList.remove('menu-is-open');
+    }
+    menuButton.addEventListener('click',function(){
+      const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+      menuButton.setAttribute('aria-expanded',String(!isOpen));
+      menuButton.setAttribute('aria-label',isOpen ? 'Otvori meni' : 'Zatvori meni');
+      navigation.classList.toggle('open',!isOpen);
+      document.body.classList.toggle('menu-is-open',!isOpen);
+    });
+    navigation.querySelectorAll('a').forEach(function(link){link.addEventListener('click',closeMenu)});
+    document.addEventListener('keydown',function(event){if(event.key === 'Escape') closeMenu()});
+    window.addEventListener('resize',function(){if(window.innerWidth > 680) closeMenu()});
+  }
+  const year = document.getElementById('year');
+  if(year) year.textContent = new Date().getFullYear();
+  const revealItems = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    const revealObserver = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){entry.target.classList.add('visible');revealObserver.unobserve(entry.target)}
+      });
+    },{threshold:0.12,rootMargin:'0px 0px -35px 0px'});
+    revealItems.forEach(function(item){revealObserver.observe(item)});
+  }else{revealItems.forEach(function(item){item.classList.add('visible')})}
+})();
+</script>
 
 <script>
 (function(){
@@ -778,5 +1031,48 @@
 </script>
 
 <script src="script.js"></script>
+
+<script>
+(function(){
+  const cards=[...document.querySelectorAll('.drina-discover-card')];
+  const title=document.getElementById('drinaDiscoverTitle');
+  const text=document.getElementById('drinaDiscoverText');
+  const kicker=document.getElementById('drinaDiscoverKicker');
+  const date=document.getElementById('drinaDiscoverDate');
+  const tabs=[...document.querySelectorAll('[data-discover]')];
+  const slides=[
+    {image:26,alt:'Fotografija Drina Escape 26',kicker:'DRINA ESCAPE',date:'01 / 05',title:'Doživite Drinu <em>izbliza.</em>',text:'Za one koji žele da odmor provedu i na vodi, postoji mogućnost iznajmljivanja SUP daske i čamca za spust Drinom, uz dodatnu doplatu.'},
+    {image:22,alt:'Fotografija Drina Escape 22',kicker:'DRINA ESCAPE',date:'02 / 05',title:'Doživite Drinu <em>izbliza.</em>',text:'Za one koji žele da odmor provedu i na vodi, postoji mogućnost iznajmljivanja SUP daske i čamca za spust Drinom, uz dodatnu doplatu.'},
+    {image:16,alt:'Fotografija Drina Escape 16',kicker:'DRINA ESCAPE',date:'03 / 05',title:'Doživite Drinu <em>izbliza.</em>',text:'Za one koji žele da odmor provedu i na vodi, postoji mogućnost iznajmljivanja SUP daske i čamca za spust Drinom, uz dodatnu doplatu.'},
+    {image:5,alt:'Fotografija Drina Escape 5',kicker:'DRINA ESCAPE',date:'04 / 05',title:'Priroda svuda <em>oko vas.</em>',text:'Vikendica je udaljena oko 7 km od Bajine Bašte, a na dohvat ruke su Perućačko jezero i planina Tara.'},
+    {image:28,alt:'Fotografija Drina Escape 28',kicker:'DRINA ESCAPE',date:'05 / 05',title:'Priroda svuda <em>oko vas.</em>',text:'Vikendica je udaljena oko 7 km od Bajine Bašte, a na dohvat ruke su Perućačko jezero i planina Tara.'}
+  ];
+  let current=1;
+  function render(){
+    const slide=slides[current];
+    title.innerHTML=slide.title;text.textContent=slide.text;kicker.textContent=slide.kicker;date.textContent=slide.date;
+    cards.forEach((card,position)=>{
+      const slideIndex=(current + position - 2 + slides.length) % slides.length;
+      const cardSlide=slides[slideIndex];
+      const img=card.querySelector('img');
+      if(img){img.src='image/'+cardSlide.image+'.png';img.alt=cardSlide.alt;}
+      card.dataset.slide=String(slideIndex);
+      card.setAttribute('onclick','openGallery('+cardSlide.image+')');
+      card.style.opacity='';card.style.pointerEvents='';
+    });
+    tabs.forEach((tab,i)=>{tab.classList.toggle('active-current',i===current);});
+  }
+  document.getElementById('drinaDiscoverPrev')?.addEventListener('click',()=>{current=(current+slides.length-1)%slides.length;render()});
+  document.getElementById('drinaDiscoverNext')?.addEventListener('click',()=>{current=(current+1)%slides.length;render()});
+  tabs.forEach(tab=>tab.addEventListener('click',()=>{current=Number(tab.dataset.discover);render()}));
+  cards.forEach(card=>card.addEventListener('click',()=>{const idx=Number(card.dataset.slide);if(idx<slides.length){current=idx;render()}}));
+  let startX=0;
+  const track=document.getElementById('drinaDiscoverTrack');
+  track?.addEventListener('touchstart',e=>{startX=e.changedTouches[0].clientX},{passive:true});
+  track?.addEventListener('touchend',e=>{const delta=e.changedTouches[0].clientX-startX;if(Math.abs(delta)>45){current=(current+(delta<0?1:slides.length-1))%slides.length;render()}},{passive:true});
+  render();
+})();
+</script>
+
 </body>
 </html>
